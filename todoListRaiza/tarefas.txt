@@ -1,0 +1,25 @@
+ -------------- 
+ID:f8e182e3
+ Nome:Implementar framework
+ Descricao:Realizar a instação das dependências e implementar a framework x
+ Data:12/05/24
+ Prioridade:4
+ Categoria:Backend
+ Status:To do
+ -------------- 
+ ID:e530ab89
+ Nome:Implementar funcionalidade nova
+ Descricao:Criar o crud para o mvp do projeto
+ Data:12/07/24
+ Prioridade:3
+ Categoria:Backend
+ Status:To do
+ -------------- 
+ID:1ead9e24
+ Nome:Criar figma
+ Descricao:Para fins de design, criar prototipo do figma
+ Data:10/12/24
+ Prioridade:3
+ Categoria:Design
+ Status:Doing
+ -------------- 
