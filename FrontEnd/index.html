@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="alinhaCorpo">
+        <h1 class="letraCinza">TAREFAS</h1>
+        <div class="filtragem">
+            <img src="img/iconFiltro.png" alt="">
+        </div>
+
+        <div class="todoList">
+            <div class="todo">
+                <div class="status">
+                    <div class="pin" style="background-color: #FFABAB;"></div>
+                    <h1>To do</h1>
+                </div>
+
+                <div class="cardTarefa c-todo" id="1029">
+                    <div class="infoTarefa">
+                        <div class="descTarefa">
+                            <div class="topoTarefa">
+                                <h2>Marcar pendrive</h2>
+                                <h4 class="quadradoPrioridade">
+3
+                                </h4>
+                            </div>
+                            <p>
+Precisa colocar rotulos em cada pendrive para evitar confusão entre os outros pendrives.
+                            </p>
+                        </div>
+
+                        <div class="baseTarefa">
+                            <input class="dataTarefa" type="date" value="2024-09-29" readonly>
+                            <div class="tagTarefa tag">Design</div>
+                            <div class="tagTarefa tagTodo statusTodo status">To do</div>
+                            <button type="button" class="botoes" onclick="editarTarefa(1029)">Editar</button>
+                            <button class="botoes" onclick="apagarTarefa(1029)">Apagar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="divisaoStatus">
+
+            <div class="divDoing">
+                <div class="status">
+                    <div class="pin" style="background-color: #ABB8FF;"></div>
+                    <h1>Doing</h1>
+                </div>
+                <div class="cardTarefa doing" id="65">
+                    <div class="infoTarefa">
+                        <div class="descTarefa">
+                            <div class="topoTarefa">
+                                <h2>Marcar pendrive</h2>
+                                <h4 class="quadradoPrioridade">
+3
+                                </h4>
+                            </div>
+                            <p>
+Precisa colocar rotulos em cada pendrive para evitar confusão entre os outros pendrives.
+                            </p>
+                        </div>
+
+                        <div class="baseTarefa">
+                            <input class="dataTarefa" type="date" value="2024-09-29" readonly>
+                            <div class="tagTarefa tag">Design</div>
+                            <div class="tagTarefa tagTodo statusDoing status">Doing</div>
+                            <button type="button" class="botoes" onclick="editarTarefa(65)">Editar</button>
+                            <button class="botoes" onclick="apagarTarefa(65)">Apagar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <hr class="divisaoStatus">
+            
+
+            <div class="divDone">
+                <div class="status">
+                    <div class="pin" style="background-color: #6BFFB8;"></div>
+                    <h1>Done</h1>
+                </div>
+                <div class="cardTarefa done" id="18">
+                    <div class="infoTarefa">
+                        <div class="descTarefa">
+                            <div class="topoTarefa">
+                                <h2>Marcar pendrive</h2>
+                                <h4 class="quadradoPrioridade">
+3
+                                </h4>
+                            </div>
+                            <p>
+Precisa colocar rotulos em cada pendrive para evitar confusão entre os outros pendrives.
+                            </p>
+                        </div>
+
+                        <div class="baseTarefa">
+                            <input class="dataTarefa" type="date" value="2024-09-29" readonly>
+                            <div class="tagTarefa tag">Design</div>
+                            <div class="tagTarefa tagTodo statusDone status">Done</div>
+                            <button type="button" class="botoes" onclick="editarTarefa(18)">Editar</button>
+                            <button class="botoes" onclick="apagarTarefa(18)">Apagar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+        <!-- FORMULARIOS -->
+        <h1 class="letraCinza">FORMULÁRIOS</h1>
+        <div class="criarTarefa">
+            <input placeholder="Nome da tarefa" class="inputForm" type="text" id="nome">
+            <input placeholder="Descrição da tarefa" class="inputForm" type="text" id="desc">
+            <input class="inputForm" type="date" id="termino">
+            <input placeholder="Prioridade da tarefa (de 1 a 5)" class="inputForm" type="number" id="priori">
+            <input placeholder="Categoria da tarefa" class="inputForm" type="text" id="categ">
+
+            <select class="inputForm" id="opcoes">
+                <option value="To do">To do</option>
+                <option value="Doing">Doing</option>
+                <option value="Done">Done</option>
+            </select>
+
+            <button class="botaoForm" onclick="criarTarefa()">Criar tarefa</button>
+        </div>
+
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
